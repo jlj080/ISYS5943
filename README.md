@@ -4,7 +4,7 @@
 
 ## Status
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-sb-admin-2/master/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jlj080/ISYS5943.git/master/LICENSE)
 [![npm version](https://img.shields.io/npm/v/startbootstrap-sb-admin-2.svg)](https://www.npmjs.com/package/startbootstrap-sb-admin-2)
 
 ## Download and Installation
@@ -13,7 +13,7 @@ To begin using this template, choose one of the following options to get started
 
 -   [Download the latest release on Start Bootstrap](https://github.com/jlj080/ISYS5943.git)
 -   Install via npm: `npm i startbootstrap-sb-admin-2`
--   Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-sb-admin-2.git`
+-   Clone the repo: `git clone https://github.com/jlj080/ISYS5943.git`
 -   [Fork, Clone, or Download on GitHub](https://github.com/jlj080/ISYS5943.git)
 
 ## Usage
