@@ -12,7 +12,6 @@
 To begin using this template, choose one of the following options to get started:
 
 -   [Download the latest release on Start Bootstrap](https://github.com/jlj080/ISYS5943.git)
--   Install via npm: `npm i startbootstrap-sb-admin-2`
 -   Clone the repo: `git clone https://github.com/jlj080/ISYS5943.git`
 -   [Fork, Clone, or Download on GitHub](https://github.com/jlj080/ISYS5943.git)
 
