@@ -2,24 +2,19 @@
 
 [SB Admin 2](https://startbootstrap.com/template-overviews/sb-admin-2/) is an open source admin dashboard theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
 
-For the legacy Bootstrap 3 version of this theme, you can view the [last stable release](https://github.com/BlackrockDigital/startbootstrap-sb-admin-2/releases/tag/v3.3.7%2B1) of SB Admin 2 for Bootstrap 3.
-
 ## Status
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-sb-admin-2/master/LICENSE)
 [![npm version](https://img.shields.io/npm/v/startbootstrap-sb-admin-2.svg)](https://www.npmjs.com/package/startbootstrap-sb-admin-2)
-[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-sb-admin-2.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-sb-admin-2)
-[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-sb-admin-2/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-sb-admin-2)
-[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-sb-admin-2/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-sb-admin-2?type=dev)
 
 ## Download and Installation
 
 To begin using this template, choose one of the following options to get started:
 
--   [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/sb-admin-2/)
+-   [Download the latest release on Start Bootstrap](https://github.com/jlj080/ISYS5943.git)
 -   Install via npm: `npm i startbootstrap-sb-admin-2`
 -   Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-sb-admin-2.git`
--   [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-sb-admin-2)
+-   [Fork, Clone, or Download on GitHub](https://github.com/jlj080/ISYS5943.git)
 
 ## Usage
 
