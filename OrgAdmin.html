@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Blank - Page</title>
+    <title>Org Admin - Page</title>
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
@@ -28,22 +28,52 @@
                 <!-- Topbar -->
                 <div id="top-nav-placeholder"></div>
                 <!-- End of Topbar -->
-
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Org Admin</h1>
+                    </div>
+                    <div class="card shadow mb-2">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Create Org</h6>
+                        </div>
+                        <div class="card-body">
+                            <form class="org">
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="text" class="form-control" id="exampleName" placeholder="Name">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="number" class="form-control" id="examplePhNumber" placeholder="Phone Number">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="email" class="form-control" id="exampleEmail" placeholder="Email Address">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="date" class="form-control" id="exampleStart" title="Start Date" placeholder="Start Date">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="exampleAddress" placeholder="Address">
+                                </div>
+                                <div class="form-inline col-md-12">
+                                    <a href="#" class="btn btn-success btn-icon-split">
+                                        <span class="text">Create Org</span>
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <!-- /.container-fluid -->
-
             </div>
             <!-- End of Main Content -->
-
-            <!-- Footer -->
-            <div id="footer-placeholder"></div>
-            <!-- End of Footer -->
         </div>
-        <!-- End of Content Wrapper -->
+        <!-- /.container-fluid -->
+    </div>
+    <!-- End of Content Wrapper -->
     </div>
     <!-- End of Page Wrapper -->
 
@@ -66,6 +96,10 @@
     <script src="js/sb-admin-2.min.js"></script>
 
     <script>
+        $('#divContactSelect a').on('click', function() {
+            $('#btnMainContact').html($(this).html());
+        });
+
         $.get("/navbar.html", function(data) {
             $("#nav-placeholder").replaceWith(data);
         });

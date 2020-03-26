@@ -1,4 +1,16 @@
 // Overflow Hidden
 .o-hidden {
-  overflow: hidden !important;
+    overflow: hidden !important;
+}
+
+.appName::after {
+    content: "Log Yourself" !important;
+}
+
+.fa-trash-alt {
+    color: red;
+}
+
+.fa-save {
+    color: green;
 }

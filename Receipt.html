@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Receipt Log - Dashboard</title>
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+        <div id="nav-placeholder"></div>
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+                <!-- Topbar -->
+                <div id="top-nav-placeholder"></div>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Create Receipt Log</h1>
+                    </div>
+                    <div class="card shadow mb-2 ">
+                        <div class="card-header py-3 ">
+                            <h6 class="m-0 font-weight-bold text-primary ">Transaction Information</h6>
+                        </div>
+                        <div class="card-body ">
+                            <form class="Contractor">
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0 ">
+                                        <div class="col-sm input-group">
+                                            <label class="col-md d-block" for="btnMainProject"><b>Project</b></label>
+                                            <div class="col-md">
+                                                <button id="btnMainProject" type="button" class="btn bg-gradient-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Select One...</button>
+                                                <div id="divProjectSelect" class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">Main Street McDonald's #001</a>
+                                                    <a class="dropdown-item" href="#">Popeye's Store #995</a>
+                                                    <a class="dropdown-item" href="#">Walton St King Burrito</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="col-sm input-group">
+                                            <label class="col-md d-block" for="btnContractor"><b>User</b></label>
+                                            <div class="col-md">
+                                                <button id="btnContractor" type="button" class="btn bg-gradient-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Select One...</button>
+                                                <div id="divContractorSelect" class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">Unselect</a>
+                                                    <a class="dropdown-item" href="#">Jesse Johnson</a>
+                                                    <a class="dropdown-item" href="#">Jacob Yates</a>
+                                                    <a class="dropdown-item" href="#">Connor Krakosky</a>
+                                                    <a class="dropdown-item" href="#">Matias Rojas Delay</a>
+                                                    <a class="dropdown-item" href="#">Izaak Tesucum</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0 ">
+                                        <div class="col-sm input-group">
+                                            <label class="col-md d-block" for="btnMainProject"><b>Transaction Date</b></label>
+                                            <div class="col-md">
+                                                <input type="date" class="form-control btn bg-gradient-light" title="Transaction Date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 ">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="customFile">
+                                            <label class="custom-file-label" for="customFile">Choose file</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card shadow mb-2">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Itemized Transaction</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive-md">
+                                <table class="table table-bordered table-responsive-lg" style="overflow-y: scroll;" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Type</th>
+                                            <th>Amount</th>
+                                            <th>Date Entered</th>
+                                            <th>Contractor</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th></th>
+                                            <th>Type</th>
+                                            <th>Amount</th>
+                                            <th>Date Entered</th>
+                                            <th>Contractor</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <button id="btnSaveItem1" type="button" class="btn btn-outline-success" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-save"></i></button>
+                                            </td>
+                                            <td>
+                                                <div class="col-sm input-group">
+                                                    <div class="col-md">
+                                                        <button id="btnItemType1" type="button" class="btn bg-gradient-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Select One...</button>
+                                                        <div id="divItemType1Select" class="dropdown-menu">
+                                                            <a class="dropdown-item" href="#">Labor</a>
+                                                            <a class="dropdown-item" href="#">Food</a>
+                                                            <a class="dropdown-item" href="#">Material</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><input type="number" class="form-control btn bg-gradient-light"></td>
+                                            <td><input type="date" class="form-control btn bg-gradient-light"></td>
+                                            <td>
+                                                <div class="col-sm input-group">
+                                                    <div class="col-md">
+                                                        <button id="btnItemContractor1" type="button" class="btn bg-gradient-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Select One...</button>
+                                                        <div id="divItemContractor1Select" class="dropdown-menu">
+                                                            <a class="dropdown-item" href="#">None</a>
+                                                            <a class="dropdown-item" href="#">Jesse Johnson</a>
+                                                            <a class="dropdown-item" href="#">Jacob Yates</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <button id="btnSaveItem1" type="button" class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon fas fa-plus-circle"></i></button>
+                                            </td>
+                                            <td colspan="5">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <div id="footer-placeholder"></div>
+            <!-- End of Footer -->
+        </div>
+        <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div id="logout-placeholder"></div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <script>
+        $(".custom-file-input").on("change", function() {
+            var fileName = $(this).val().split("\\").pop();
+            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });
+
+
+        $('#divItemContractor1Select a').on('click', function() {
+            $('#btnItemContractor1').html($(this).html());
+        });
+
+        $('#divItemType1Select a').on('click', function() {
+            $('#btnItemType1').html($(this).html());
+        });
+
+        $('#divContractorSelect a').on('click', function() {
+            $('#btnContractor').html($(this).html());
+        });
+
+        $('#divProjectSelect a').on('click', function() {
+            $('#btnMainProject').html($(this).html());
+        });
+
+        $.get("/navbar.html", function(data) {
+            $("#nav-placeholder").replaceWith(data);
+        });
+        $.get("/logoutModal.html", function(data) {
+            $("#logout-placeholder").replaceWith(data);
+        });
+        $.get("/topnavbar.html", function(data) {
+            $("#top-nav-placeholder").replaceWith(data);
+        });
+        $.get("/footer.html", function(data) {
+            $("#footer-placeholder").replaceWith(data);
+        });
+        $.get("/footer.html", function(data) {
+            $("#footer-placeholder").replaceWith(data);
+        });
+    </script>
+</body>
+
+</html>

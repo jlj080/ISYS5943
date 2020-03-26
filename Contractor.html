@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Contractor Admin - Page</title>
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+        <div id="nav-placeholder"></div>
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+                <!-- Topbar -->
+                <div id="top-nav-placeholder"></div>
+                <!-- End of Topbar -->
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Contractor Editor</h1>
+                    </div>
+                    <div class="card shadow mb-2">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Current Contractors</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive-md">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>Full Name</th>
+                                            <th>Email Address</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Full Name</th>
+                                            <th>Email Address</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="# " class="btn-icon-split" title="Edit">
+                                                    <span class="btn icon text-grey-50 "><i class="fas fa-edit"></i></span>
+                                                    <span class="text ">Jesse Johnson</span>
+                                                </a>
+                                            </td>
+                                            <td>Jesse.Johnson@uark.edu</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="# " class="btn-icon-split" title="Edit">
+                                                    <span class="btn icon text-grey-50 "><i class="fas fa-edit"></i></span>
+                                                    <span class="text ">Jacob Yates</span>
+                                                </a>
+                                            </td>
+                                            <td>Jacob.Yates@uark.edu</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow mb-2 ">
+                        <div class="card-header py-3 ">
+                            <h6 class="m-0 font-weight-bold text-primary ">Edit Contractor</h6>
+                        </div>
+                        <div class="card-body ">
+                            <form class="Contractor ">
+                                <div class="form-group row ">
+                                    <div class="col-sm-6 mb-3 mb-sm-0 ">
+                                        <input type="text " class="form-control " id="exampleName " placeholder="Name " required>
+                                    </div>
+                                    <div class="col-sm-6 ">
+                                        <input type="number " class="form-control " id="examplePhNumber " placeholder="Phone Number " required>
+                                    </div>
+                                </div>
+                                <div class="form-group row ">
+                                    <div class="col-sm-6 mb-3 mb-sm-0 ">
+                                        <input type="email " class="form-control " id="exampleEmail " placeholder="Email Address " required>
+                                    </div>
+                                </div>
+                                <div class="form-group ">
+                                    <input type="text " class="form-control " id="exampleAddress " placeholder="Street Address ">
+                                </div>
+                                <div class="form-group row ">
+                                    <div class="col-sm-4 mb-3 mb-sm-0 ">
+                                        <input type="text " class="form-control " id="exampleCity " placeholder="City ">
+                                    </div>
+                                    <div class="col-sm-4 mb-3 mb-sm-0 ">
+                                        <input type="text " class="form-control " id="exampleState " placeholder="State ">
+                                    </div>
+                                    <div class="col-sm-4 ">
+                                        <input type="number " class="form-control " id="exampleZip " placeholder="Zip Code ">
+                                    </div>
+                                </div>
+                                <div class=" form-group row col-md-12 ">
+                                    <a href="# " class="btn btn-outline-primary btn-icon-split ">
+                                        <span class="icon text-grey-50"><i class="fas fa-save "></i></span>
+                                        <span class="text ">Contractor</span>
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Main Content -->
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+    <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded " href="#page-top ">
+        <i class="fas fa-angle-up "></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div id="logout-placeholder "></div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js "></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js "></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js "></script>
+
+    <script>
+        $('#divContactSelect a').on('click', function() {
+            $('#btnMainContact').html($(this).html());
+        });
+
+        $.get("/navbar.html ", function(data) {
+            $("#nav-placeholder ").replaceWith(data);
+        });
+        $.get("/logoutModal.html ", function(data) {
+            $("#logout-placeholder ").replaceWith(data);
+        });
+        $.get("/topnavbar.html ", function(data) {
+            $("#top-nav-placeholder ").replaceWith(data);
+        });
+        $.get("/footer.html ", function(data) {
+            $("#footer-placeholder ").replaceWith(data);
+        });
+        $.get("/footer.html ", function(data) {
+            $("#footer-placeholder ").replaceWith(data);
+        });
+    </script>
+
+</body>
+
+</html>
